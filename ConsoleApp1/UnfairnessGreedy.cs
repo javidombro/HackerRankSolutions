@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ConvertToPDF
+namespace HackerRankSolutions
 {
     public static class UnfairnessGreedy
     {
