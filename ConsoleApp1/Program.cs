@@ -6,10 +6,14 @@ namespace HackerRankSolutions
     {
         static void Main(string[] args)
         {
-            var order = JimAndTheOrders.jimOrders(new List<List<int>>
-            {
-                new List<int>{1,13},new List<int>{2,3}, new List<int>{2,2}, new List<int>{3,3}
-            });
+
+
+            var asds = JaneaSystemsCodingChallenge.countMax(new List<string> { "108 229", "1132 1237", "534 91", "3218 125", "136 222", "237 114", "235 1200" });
+            System.Console.WriteLine(asds);
+            //var order = JimAndTheOrders.jimOrders(new List<List<int>>
+            //{
+            //    new List<int>{1,13},new List<int>{2,3}, new List<int>{2,2}, new List<int>{3,3}
+            //});
 
             //var smallest = ReverseShuffleMerge.reverseShuffleMerge("aeiouuoiea");
             //System.Console.WriteLine(smallest);

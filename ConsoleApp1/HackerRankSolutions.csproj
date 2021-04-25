@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FlowersCost.cs" />
+    <Compile Include="JaneaSystemsCodingChallenge.cs" />
     <Compile Include="JimAndTheOrders.cs" />
     <Compile Include="LuckBalance.cs" />
     <Compile Include="MinimumAbsoluteDifference.cs" />
