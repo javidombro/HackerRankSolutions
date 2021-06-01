@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{6F420051-7D48-42D6-8841-8933C456312B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ConsoleApp1</RootNamespace>
-    <AssemblyName>ConsoleApp1</AssemblyName>
+    <RootNamespace>HackerRankSolutions</RootNamespace>
+    <AssemblyName>HackerRankSolutions</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -57,6 +57,7 @@
     <Compile Include="JimAndTheOrders.cs" />
     <Compile Include="LuckBalance.cs" />
     <Compile Include="MinimumAbsoluteDifference.cs" />
+    <Compile Include="PostDateFormatter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReverseShuffleMerge.cs" />
