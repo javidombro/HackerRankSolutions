@@ -1,4 +1,7 @@
 ﻿using System;
+using System.IO;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace HackerRankSolutions
 {
@@ -7,8 +10,25 @@ namespace HackerRankSolutions
         static void Main(string[] args)
         {
 
-            var solution = PostDateFormatter.solution(-59455);
-            Console.WriteLine(solution);
+
+            string s = Console.In.ReadToEnd();
+            var stdin = s.Split();
+            foreach (var item in stdin)
+            {
+                Console.WriteLine(item);
+            }
+
+            Directory current = new Directory(null);
+            IFormatter formatter = new BinaryFormatter();
+            Stream stream = new FileStream("SerializedObject", FileMode.Create, FileAccess.Write);
+            formatter.Serialize(stream, current);
+            stream.Close();
+
+            stream = new FileStream("SerializedObject", FileMode.Open, FileAccess.Read);
+            Directory directory = (Directory)formatter.Deserialize(stream);
+
+            //var solution = PostDateFormatter.solution(-59455);
+            //Console.WriteLine(solution);
             //var diff = PostDateFormatter.Format(DateTime.Now, DateTime.Now);
             //Console.WriteLine(diff);
 
